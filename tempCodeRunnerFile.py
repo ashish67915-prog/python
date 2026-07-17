@@ -1,1 +1,1 @@
-o2.show()
+print(movies.columns)

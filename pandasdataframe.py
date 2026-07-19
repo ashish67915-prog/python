@@ -114,14 +114,14 @@ movies = pd.read_csv('movies (1).csv')
 
 
 #use of iloc and loc
-student_dict = {
-    'name':['ashish','akash','aman','aditya','aryan'],
-    'age':[20,22,25,20,19],
-    'package':[10,20,30,40,50],
+# student_dict = {
+#     'name':['ashish','akash','aman','aditya','aryan'],
+#     'age':[20,22,25,20,19],
+#     'package':[10,20,30,40,50],
     
-}
+# }
 
-a = pd.DataFrame(student_dict)
+# a = pd.DataFrame(student_dict)
 # print(a)
 
 #iloc->using index
@@ -180,3 +180,33 @@ a = pd.DataFrame(student_dict)
 
 
 #some dataframe fuctions 
+#astype -> use to reduce the size or memory
+# student_dict = {
+#     'age':[10,20,30,120,140,150,180,220,200,250]
+# }
+
+# a = pd.DataFrame(student_dict)
+# # print(a)
+# result = a[a['age'].between(100, 200)]
+# print(result)
+
+
+#clip
+
+# student_dict = {
+#     "age":[70,80,90,120,140,170,190,210,240,280]
+# }
+
+# a = pd.DataFrame(student_dict)
+# result = a.clip(100,200)
+# print(result)
+
+
+#drop_duplicates
+student_dict = {
+    'age':[2,2,3,4,5,6,6,6,7]
+}
+
+a = pd.DataFrame(student_dict)
+
+

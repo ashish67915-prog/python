@@ -1,1 +1,1 @@
-print(movies.columns)
+plt.legend()
